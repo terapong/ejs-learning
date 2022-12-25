@@ -1,0 +1,11 @@
+<%- include('../partials/head') %> 
+<%- include('../partials/header') %> 
+
+<div class="conteiner">
+    <h1>Hi, there!  <%= user.firstName  %> + " " + <%= user.firstName  %> </h1>
+    <% if(user.admin) { %>
+        <p>Let me tell you a secret: <b>I,m an admin</b></p>
+    <% } %>
+</div>
+  
+<%- include('../partials/footer) %>
